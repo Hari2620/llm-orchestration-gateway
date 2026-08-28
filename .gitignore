@@ -1,0 +1,8 @@
+bin/
+obj/
+__pycache__/
+*.pyc
+.env
+logs/*.jsonl
+.venv/
+*.egg-info/

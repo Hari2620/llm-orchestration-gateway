@@ -1,0 +1,18 @@
+services:
+  guardrails-eval:
+    build: ./guardrails_eval
+    ports: ["8081:8081"]
+    environment:
+      - LOG_LEVEL=info
+
+  gateway:
+    build: ./gateway
+    ports: ["8080:8080"]
+    env_file: .env
+    environment:
+      - GUARDRAILS_EVAL_URL=http://guardrails-eval:8081
+      - ASPNETCORE_URLS=http://+:8080
+    depends_on:
+      - guardrails-eval
+    volumes:
+      - ./logs:/app/logs

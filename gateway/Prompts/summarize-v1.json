@@ -1,0 +1,5 @@
+{
+  "name": "summarize",
+  "version": "v1",
+  "template": "Summarize the following text in three bullet points, no preamble:\n\n{{text}}"
+}

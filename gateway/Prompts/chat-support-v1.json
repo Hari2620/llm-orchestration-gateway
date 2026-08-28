@@ -1,0 +1,5 @@
+{
+  "name": "chat-support",
+  "version": "v1",
+  "template": "You are a support agent. Be concise and factual. Customer message: {{message}}"
+}
