@@ -21,7 +21,7 @@ and how do we know a "small" prompt tweak didn't quietly make outputs worse?
 A gateway is the answer, but only if it's a *thin* one. This repo draws the
 line deliberately narrow: it does not do agent orchestration, it does not
 manage conversation state, it does not pick between providers dynamically.
-It does the boring, load-bearing stuff — the same boring stuff Azure's own
+It does the boring, load-bearing stuff the same boring stuff Azure's own
 GenAI gateway guidance (API Management in front of Azure OpenAI, doing
 routing / aggregation / offloading) is built around in about 500 lines
 split across a .NET service and a Python sidecar.
